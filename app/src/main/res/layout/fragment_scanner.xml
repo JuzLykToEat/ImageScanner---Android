@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_weight="0.19">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/alert_light_frame"
+                android:id="@+id/imageView"
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:padding="25px"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srcCompat="@android:drawable/alert_light_frame"
+                android:id="@+id/imageView2"
+                android:layout_weight="0.5"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:padding="25px"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_weight="0.1">
+
+            <TextView
+                android:text="MRI"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView"
+                android:gravity="center"
+                android:layout_weight="0.50"
+                android:textSize="22sp" />
+
+            <TextView
+                android:text="Processed Image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/textView2"
+                android:gravity="center"
+                android:textSize="22sp"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_weight="0.1" />
+
+        <TextView
+            android:text="Some text here"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/textView3"
+            android:textSize="18sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            tools:textStyle="bold" />
+
+        <TextView
+            android:text="Some more text here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="16sp"
+            android:layout_weight="0.57" />
+
+        <Button
+            android:text="Scan"
+            android:id="@+id/button_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</FrameLayout>
